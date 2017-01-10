@@ -14,5 +14,6 @@ RUN apt-get update \
 
 RUN echo 'gem: --no-document' > /usr/local/etc/gemrc
 RUN gem update
+RUN gem --help
 RUN gem install bundler
 RUN gem install fir-cli
