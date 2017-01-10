@@ -1,4 +1,4 @@
-from: jangrewe/gitlab-ci-android
+FROM jangrewe/gitlab-ci-android
 
 #Install Ruby 2.3
 
