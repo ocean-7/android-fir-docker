@@ -12,7 +12,7 @@ FROM jangrewe/gitlab-ci-android
 
 # Setup Gradle
 ENV GRADLE_VERSION 3.1
-RUN wget -q "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" -O gradle.zip && \
+RUN wget -q "https://downloads.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" -O gradle.zip && \
     unzip -q gradle.zip -d /opt && \
     ln -s "/opt/gradle-${GRADLE_VERSION}/bin/gradle" /usr/bin/gradle && \
     rm gradle.zip
